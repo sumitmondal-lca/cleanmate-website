@@ -1,0 +1,749 @@
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html{
+	scroll-behavior: smooth;
+	color-scheme: dark light;
+}
+
+body{
+	font-size: 16px;
+	font-family: "Lato", serif;
+	color: #444;
+	background-color: #fff;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+img{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+ul,
+li{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	border-right: 1px solid red;
+	border-left: 1px solid red;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.d-flex{
+	display: flex;
+}
+
+
+
+
+/*---------why choose us [header]*/
+.header{
+	background-image: url('https://quanticalabs.com/CleanMate/Template/images/slider/image_01.jpg');
+	height: 700px;
+	position: relative;
+}
+
+.header .header-block .top-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0 0 0;
+	margin: 0;
+}
+
+.header .header-block .top-header > nav > ul{
+	display: flex;
+	gap: 30px;
+} 
+
+.header .header-block .top-header > nav ul li a{
+	font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+
+
+.header .header-block .top-header .logo-block h2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+
+	color: #fff;
+}
+
+
+
+
+.header .header-block .top-header .nav-and-icon-block{
+	display: flex;
+	gap: 25px;
+	align-items: center;
+}
+
+.header .header-block .top-header .nav-and-icon-block > nav > ul{
+	display: flex;
+	align-items: center;
+	gap: 30px;	
+}
+
+.header .header-block .top-header .nav-and-icon-block > nav > ul > li > a{
+	font-family: inherit;
+	font-size: 14px;
+	color: #FFF;
+	font-weight: 400;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.header .header-block .top-header .nav-and-icon-block .icon-block ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.header .header-block .top-header .nav-and-icon-block .icon-block ul li i{
+	font-size: 20px;
+	color: #FFF;
+}
+
+.header .header-block .top-header .nav-and-icon-block .icon-block ul > li:nth-of-type(1){
+ position: relative;
+}
+
+.header .header-block .top-header .nav-and-icon-block .icon-block ul > li:nth-of-type(1)::after{
+	content: "2";
+	position: absolute;
+	bottom: 22px;
+	right: 0;
+	height: 20px;
+	width: 16px;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 75%, 100% 100%, 75% 75%, 0% 75%);
+	background-color: #ffffff;
+
+	font-size: 10px;
+	color: #000;
+	/* padding: 5px; */
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+
+
+
+.header .header-block .text-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.header .header-block .text-content p{
+	font-family: inherit;
+	font-size: 18px;
+	line-height: 1.3;
+	color: #FFF;
+	font-weight: 600;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 0.5px;
+}
+
+.header .header-block .text-content h1{
+	font-family: inherit;
+	font-size: 55px;
+	color: #FFF;
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 45px 0;
+}
+.header .header-block .text-content h1 > span{
+	font-family: inherit;
+	font-size: 55px;
+	color: #FFF;
+	font-weight: 600;
+	letter-spacing: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.header .header-block .text-content a{
+	color: #FFF;
+    font-family: inherit;
+    font-size: 16px;
+    background: #56B665;
+    padding: 16px 35px;
+    text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 0.5px;
+    line-height: 24px;
+    border-radius: 50px;
+    transition: all 0.2s ease 0s;
+    border: 2px solid #56B665;
+
+}
+
+
+
+
+/*--------------[why choose us] css*/
+.why-choose-us{
+	margin: 80px 0;
+}
+
+/*------------why choose us [why-choose-us-header] css*/
+.why-choose-us .why-choose-us-header{
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+
+.why-choose-us .why-choose-us-header h2{
+	font-size: 29px;
+    color: #111;
+    font-weight: 700;
+    line-height: 42px;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.why-choose-us .why-choose-us-header .line{
+	width: 120px;
+	margin: 20px auto 0;
+	height: 2px;
+	background-color: green;
+}
+
+.why-choose-us .why-choose-us-header p{
+	font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    font-family: inherit;
+    /* width: calc(100% - 50%); */
+    margin: 40px auto 0;
+}
+
+
+
+
+/*----------why choose us [article] css*/
+.why-choose-us .article{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+/*----------why choose us article [BLOCK] css*/
+.why-choose-us .article .block{
+/*	width: 	calc(68% - 502px);*/
+	width: calc((100% - 502px) / 2);
+	padding: 0 30px 0 0;
+	order: 1;
+	text-align: right;
+}
+
+.why-choose-us .article .block .inner > h2{
+	font-size: 18px;
+    line-height: 28px;
+    font-family: inherit;
+	margin-top: 45px;
+    letter-spacing: 0.5px;
+}
+
+.why-choose-us .article .block .inner > p{
+	font-family: inherit;
+    color: #525252;
+	font-weight: 300;
+    line-height: 24px;
+	padding-top: 27px;
+}
+
+.why-choose-us .article .block:nth-of-type(2){
+	padding-left: 30px;
+	padding-right: 0px;
+	order: 3;
+	text-align: left;
+}
+
+
+/*----------why choose us article [image BLOCK] css*/
+.why-choose-us .article .image-block{
+	width: 502px;
+	height: 502px;
+	border-radius: 50%;
+	border: 1px solid #ebebeb;
+	padding: 10px;
+	background-color: #ffffff;
+	order: 2;
+	overflow: hidden;
+	/* aspect-ratio: 1; */
+	/* margin-inline: auto; */
+}
+.why-choose-us .article .image-block img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+}
+
+.why-choose-us .btn{
+	text-align: center;
+}
+
+.why-choose-us .btn a{
+	font-size: 16px;
+	color: #FFF;
+	line-height: 24px;
+	background: #56B665;
+	text-align: center;
+	margin: 50px 0 0 0;
+	padding: 15px 35px;
+	border-radius: 40px;
+	cursor: pointer;
+	transition: 0.3s;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.why-choose-us .btn a:hover{
+	color: #444;
+	background-color: #fff;
+	border: 2px solid #56B665;
+}
+
+
+
+
+/* noting is more important css */
+.important{
+	background-image: url("../image/impotant.jpg");
+	background-size: cover;
+	background-position: center 0;
+	background-attachment: fixed;
+	position: relative;
+
+	/* margin: 80px 0; */
+	padding: 80px 0;
+}
+.important::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.important .content-block{
+	text-align: center;
+}
+
+.important .content-block .content-block-header h2{
+	font-family: inherit;
+	font-size: 28px;
+	line-height: 40px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0 0 18px 0;
+
+	position: relative;
+}
+
+.important .content-block .content-block-header h2::after{
+	content: "";
+	width: 120px;
+	height: 2px;
+	background-color: #fff;
+
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.important .content-block .content-block-header p{
+	font-family: inherit;
+	font-size: 18px;
+	color: #fff;
+	font-weight: 300;
+	margin: 40px 0 0 0;
+}
+.important .content-block .content-block-icon{
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin: 25px 0;
+	z-index: 1;
+}
+
+.important .content-block .content-block-icon a > div{
+	padding: 15px;
+	cursor: pointer;
+}
+
+.important .content-block .content-block-icon a > div i{
+	font-size: 45px;
+	color: #dbdbdb;
+	padding: 20px;
+	transition: 0.3s;
+}
+.important .content-block .content-block-icon a > div i:hover{
+	color: #FFF;
+}
+
+.important .content-block .content-block-icon a > div p{
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.important .content-block .content-block-text p{
+	font-size: 16px;
+	color: #fff;
+	line-height: 24px;
+	font-weight: normal;
+	width: 75%;
+	margin: auto;
+}
+
+
+
+
+/* our cleaning service css */
+.cleaning{
+	/* margin: 80px 0;	 */
+	padding: 80px 0;
+	background-color: #f5f5f5;
+}
+
+.cleaning .cleaning-block .cleaning-block-header h2{
+	font-family: inherit;
+	font-size: 28px;
+	line-height: 40px;
+	color: #000;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 0 18px 0;
+
+	position: relative;
+}
+
+.cleaning .cleaning-block .cleaning-block-header h2::after{
+	content: "";
+	width: 120px;
+	height: 2px;
+	background-color: #49be05;
+
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.cleaning .cleaning-block .cleaning-block-header p{
+	font-family: inherit;
+	font-size: 18px;
+	color: #313131;
+	font-weight: 300;
+	margin: 40px 0 0 0;
+	text-align: center;
+}
+
+.cleaning .cleaning-block .card-holder{
+	margin: 80px 0;
+	display: flex;
+	gap: 30px;
+}
+
+.cleaning .cleaning-block .card-holder li{
+	width: calc(100% - 15px);
+	padding: 0 0 20px 0;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cleaning .cleaning-block .card-holder li a{
+	text-align: center;
+}
+
+.cleaning .cleaning-block .card-holder li a .img-box > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.cleaning .cleaning-block .card-holder li a > h2{
+	font-family: inherit;
+	font-size: 18px;
+	line-height: 28px;
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 30px 0 0 0;
+
+}
+
+.cleaning .cleaning-block .card-holder li a > h2::after{
+	content: "";
+	display: block;
+	width: 30px;
+	height: 2px;
+	background-color: rgb(49, 190, 30);
+	margin: 20px auto 0;
+}
+
+.cleaning .cleaning-block .card-holder li a > p{
+	font-family: inherit;
+	font-size: 16px;
+	color: #313131;
+	font-weight: 300;
+	margin: 16px 0 0 0;
+	text-align: center;
+}
+
+
+
+/* about our company css */
+.about-our-company{
+	margin: 88px 0;
+}
+
+.about-our-company .about-block{
+	display: flex;
+	gap: 30px;
+}
+
+.about-our-company .about-block .image-block{
+	width: calc(100% - 15px);
+	display: flex;
+	gap: 30px;
+}
+
+.about-our-company .about-block .image-block .block:nth-of-type(1){
+	width: calc(100% - 50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* gap: 30px; */
+}
+
+.about-our-company .about-block .image-block .block:nth-of-type(2){
+	width: 50%;
+}
+
+.about-our-company .about-block .image-block img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.about-our-company .about-block .text-block{
+	width: calc(100% - 15px);
+	text-align: center;
+}
+
+.about-our-company .about-block .text-block h2{
+	font-family: inherit;
+	font-size: 29px;
+	line-height: 24px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.about-our-company .about-block .text-block h2::after{
+	content: "";
+	display: block;
+	width: 100px;
+	height: 2px;
+	background-color: rgb(49, 190, 30);
+	margin: 30px auto 0;
+}
+
+.about-our-company .about-block .text-block p:nth-of-type(1){
+	font-family: inherit;
+	font-size: 19px;
+	line-height: 32px;
+	font-weight: 300;
+	margin: 40px 0 0 0;
+}
+
+.about-our-company .about-block .text-block p:nth-of-type(2){
+	font-family: inherit;
+	font-size: 16px;
+	color: #303030;
+	line-height: 24px;
+	font-weight: 300;
+	margin: 35px 0 0 0;
+	padding: 0 30px;
+}
+
+.about-our-company .about-block .text-block a{
+    font-family: inherit;
+    font-size: 14px;
+	color: #FFF;
+    line-height: 24px;
+    text-align: center;
+	text-transform: capitalize;
+    background: #56B665;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    padding: 12px 35px;
+	margin: 35px 0 0 0;
+    transition: 0.3s;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.about-our-company .about-block .text-block a:hover{
+	color: #000;
+	background-color: transparent;
+	border: 2px solid #56B665;
+}
+
+
+
+
+/*  number animation block css */
+.number-animation-block{
+	background-image: url("https://quanticalabs.com/CleanMate/Template/images/samples/1920x1200/image_02.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 80px;
+	background-attachment: fixed;
+
+	position: relative;
+	margin: 80px 0;
+	height: 400px;
+}
+
+.number-animation-block::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+	/* z-index: 1; */
+}
+
+.number-animation-block > .container{
+	height: 100%;  		/* height 100% only this container */
+}
+
+.number-animation-block .numbers-holder{
+	display: flex;
+	gap: 80px;
+	height: 100%
+}
+
+.number-animation-block .numbers-holder > div{
+	/* margin: 0 0 0 30px; */
+	position: relative;
+	display: flex;
+}
+
+.number-animation-block .numbers-holder > div .line{
+	height: 70%;
+	width: 2px;
+	background-color: #000000;
+	position: relative;
+}
+
+.number-animation-block .numbers-holder > div:nth-of-type(2) .line{
+	height: 50%;
+}
+
+.number-animation-block .numbers-holder > div:nth-of-type(3) .line{
+	height: 80%;
+}
+
+.number-animation-block .numbers-holder > div:nth-of-type(4) .line{
+	height: 65%;
+}
+
+.number-animation-block .numbers-holder > div .line::after{
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 2px solid #000000;
+	/* background-color: #ff0000; */
+
+}
+
+.number-animation-block .numbers-holder > div > div > h2{
+	font-family: inherit;
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 300;
+	color: #141414;
+	padding: 40px 0 0 0;
+	margin: 0 0 0 30px;
+}
+
+.number-animation-block .numbers-holder > div > div > p{
+	font-family: inherit;
+	font-size: 15px;
+	line-height: 21px;
+	color: #181818;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 15px 0 0 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
