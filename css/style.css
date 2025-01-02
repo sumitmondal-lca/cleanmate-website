@@ -41,8 +41,10 @@ li{
 }
 .flex{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+	height: 100%;
 }
 .d-flex{
 	display: flex;
@@ -51,12 +53,75 @@ li{
 
 
 
+
 /*---------why choose us [header]*/
-.header{
+
+header{
+	position: fixed;
+  	left: 0;
+  	top: 0;
+  	right: 0;
+ 	z-index: 9999;
+  	background-color: rgba(10, 10, 10, 0.533);
+	backdrop-filter: blur(6px), saturate(10px);
+  	transition: all 0.3s ease-in-out;
+	box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.15);
+}
+.banner-section .container{
+	height: 100%;
+}
+.slide-item{
+  position: relative;
+}
+
+.slide-item .text{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.533);
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+.slide-item .text h1{
+	color: #FFF;
+}
+.slide-item .text p{
+	color: #FFF;
+}
+
+body.scroll-down header {
+	transform: translateY(-100%);
+}
+
+
+
+
+
+
+/* .banner-section{
+	height: 100vh;
+}
+.banner-section .banner-slider{
+	width: 100%;
+	height: 100%;
+}
+.banner-section .banner-slider .text-block{
+	background-image: url("https://quanticalabs.com/CleanMate/Template/images/slider/image_01.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+} */
+
+
+
+
+/* .header{
 	background-image: url('https://quanticalabs.com/CleanMate/Template/images/slider/image_01.jpg');
 	height: 700px;
 	position: relative;
-}
+} */
 
 .header .header-block .top-header{
 	display: flex;
@@ -132,7 +197,7 @@ li{
 }
 
 .header .header-block .top-header .nav-and-icon-block .icon-block ul > li:nth-of-type(1)::after{
-	content: "2";
+	content: attr(data-count);
 	position: absolute;
 	bottom: 22px;
 	right: 0;
@@ -348,6 +413,7 @@ li{
 
 	/* margin: 80px 0; */
 	padding: 80px 0;
+	isolation: isolate;
 }
 .important::after{
 	content: "";
@@ -357,6 +423,7 @@ li{
 	right: 0;
 	bottom: 0;
 	background-color: rgba(0, 0, 0, 0.4);
+	z-index: -1;
 }
 
 .important .content-block{
@@ -634,9 +701,9 @@ li{
 /*  number animation block css */
 .number-animation-block{
 	background-image: url("https://quanticalabs.com/CleanMate/Template/images/samples/1920x1200/image_02.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 80px;
+	background-size: 120%;
+	background-repeat: repeat;
+	background-position: center;
 	background-attachment: fixed;
 
 	position: relative;
@@ -726,7 +793,18 @@ li{
 }
 
 
-
+.ball{
+	background-image: url("../image/man.png");
+	position: absolute;
+	background-color: red;
+	height: 30px;
+	width: 30px;
+	/* border-radius: 50px; */
+	left: 0;
+	top: 0;
+	z-index: 9999999;
+	background-size: 30px;
+}
 
 
 
